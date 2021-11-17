@@ -28,6 +28,7 @@
             <li><a href="guestbook.html">GUESTBOOK</a></li>
             <li><a href="flex.html">FLEX</a></li>
             <li><a href="media.html">MEDIA</a></li>
+            <li><a href="lab6.html">LAB 6 ACTIVITY</a></li>
         </ul>
     </nav>
 
@@ -42,8 +43,9 @@
                         <td colspan="2">
                             <select id="bgColor">
                                 <option value="1">Blue</option>
-                                <option value="2">Red</option>
+                                <option value="2">White</option>
                                 <option value="3">Purple</option>
+                                <option value="4">Original</option>
                             </select>
 
                             <select id="websiteRedirect">
@@ -53,36 +55,40 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Name:</th>
-                        <td><input type="text" id="name"/></td>
+                        <th>First Name:</th>
+                        <td><input type="text" id="name" required/></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name:</th>
+                        <td><input type="text" id="lname" required/></td>
                     </tr>
                     <tr>
                         <th>Email:</th>
-                        <td><input type="text" id="email"/></td>
+                        <td><input type="text" id="email" required/></td>
                     </tr>
                     <tr>
                         <th>Address:</th>
-                        <td><textarea rows="4" id="address"></textarea></td>
+                        <td><textarea rows="4" id="address" required></textarea></td>
                     </tr>
                     <tr>
                         <th>Gender:</th>
                         <td>
-                            <input type="radio" id="fem" name="gender" value="Female">Female</input>
-                            <input type="radio" id="mal" name="gender" value="Male">Male</input>
+                            <input type="radio" id="fem" name="gender" value="Female" required>Female</input>
+                            <input type="radio" id="mal" name="gender" value="Male" required>Male</input>
                         </td>
                     </tr>
                     <tr>
                         <th>Comment:</th>
-                        <td><textarea rows="4" id="comment"></textarea></td>
+                        <td><textarea rows="4" id="comment" required></textarea></td>
                     </tr>
                     <tr>
                         <th>Favorite Site</th>
                         <td>
-                            <input type="checkbox" id="google" value="Google"/>
+                            <input type="checkbox" id="google" value="Google" />
                             <label for="google">Google Page</label>
-                            <input type="checkbox" id="fb" value="Facebook"/>
+                            <input type="checkbox" id="fb" value="Facebook" />
                             <label for="fb">Facebook Page</label>
-                            <input type="checkbox" id="utem" value="UTeM"/>
+                            <input type="checkbox" id="utem" value="UTeM" />
                             <label for="utem">UTeM Page</label>
                         </td>
                     </tr>
@@ -95,11 +101,11 @@
                 </table>
             </form>
 
+            </center>
 
             <div id="submitted">
 
             </div>
-            </center>
         </div>
     </section>
 </div>

@@ -1,9 +1,3 @@
-/*
-Ahmad Adi Iman bin Zuraidi
-B031920027
-SILAT CEKAK WEBPAGE
-*/
-
 function changeBG(val){
     var body = document.getElementsByTagName("body")[0];
     if (val == 1){
@@ -11,11 +5,15 @@ function changeBG(val){
     }
 
     else if (val == 2){
-        body.style.backgroundColor = "red";
+        body.style.backgroundColor = "white";
     }
 
     if (val == 3){
         body.style.backgroundColor = "purple";
+    }
+
+    if (val == 4){
+        body.style.backgroundColor = "#41b3a3";
     }
 }
 
@@ -34,6 +32,7 @@ form.onsubmit = (event)  =>{
     event.preventDefault();
 
     var a = document.getElementById("name").value;
+    var aa = document.getElementById("lname").value;
     var b = document.getElementById("email").value;
     var c = document.getElementById("address").value;
     var d = document.getElementById("fem").checked;
@@ -56,7 +55,8 @@ form.onsubmit = (event)  =>{
 
 
     var write = `
-        <b>Name : </b>  ${a} <br>
+        <b>First Name : </b>  ${a} <br>
+        <b>Last Name : </b>  ${aa} <br>
         <b>Email : </b>  ${b} <br>
         <b>Address : </b>  ${c} <br>
         <b>Gender : </b>  ${gender} <br>
@@ -74,3 +74,4 @@ var websitesel = document.getElementById("websiteRedirect");
 
 bgColor.onchange = () => {changeBG(bgColor.value);}
 websitesel.onchange = () => {changeWebsite(websitesel.value);}
+
